@@ -1,76 +1,100 @@
-<mxfile host="app.diagrams.net" modified="2022-04-24T08:54:24.272Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="NtgMic9CW4xEdt-xxbYA" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-29T12:04:28.139Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="eJxACpWkzDJ5CQGu7lZb" version="17.4.6" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
     <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="2" value="1st Functionality of App. Cloudinary" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
-          <mxGeometry x="230" y="40" width="260" height="290" as="geometry">
+          <mxGeometry x="230" y="40" width="260" height="540" as="geometry">
             <mxRectangle x="230" y="40" width="80" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7" value="get pictures" style="" parent="2" vertex="1">
-          <mxGeometry x="80" y="140" width="90" height="50" as="geometry" />
+        <mxCell id="7" value="saving pictures URL as array" style="" parent="2" vertex="1">
+          <mxGeometry x="25" y="230" width="210" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="8" value="rendering on Front-end" style="" parent="2" vertex="1">
-          <mxGeometry x="65" y="240" width="130" height="50" as="geometry" />
+        <mxCell id="8" value="forEach on array to render picture" style="" parent="2" vertex="1">
+          <mxGeometry x="35.5" y="340" width="185" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="WuJb_m4MgEyChKIxHusW-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.356;exitY=1.04;exitDx=0;exitDy=0;exitPerimeter=0;" parent="2" source="7" edge="1">
+        <mxCell id="WuJb_m4MgEyChKIxHusW-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.49;exitY=1.02;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="2" source="7" target="8" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="131" y="160" as="sourcePoint" />
-            <mxPoint x="112" y="240" as="targetPoint" />
+            <mxPoint x="111" y="480" as="sourcePoint" />
+            <mxPoint x="128" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WuJb_m4MgEyChKIxHusW-42" value="Server-side 2 Front-end" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="WuJb_m4MgEyChKIxHusW-41" connectable="0" vertex="1">
+        <mxCell id="WuJb_m4MgEyChKIxHusW-42" value="Respond&amp;nbsp; Array to Front-end" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="WuJb_m4MgEyChKIxHusW-41" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q8vAl-WPXsvcyoQia3Vs-30" value="Send public API key" style="" parent="2" vertex="1">
-          <mxGeometry x="60" y="30" width="130" height="50" as="geometry" />
+        <mxCell id="Q8vAl-WPXsvcyoQia3Vs-30" value="Server send public API key" style="" parent="2" vertex="1">
+          <mxGeometry x="50" y="120" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.489;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.492;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="2" source="Q8vAl-WPXsvcyoQia3Vs-30" target="7" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="110" y="90" as="sourcePoint" />
-            <mxPoint x="270" y="90" as="targetPoint" />
+            <mxPoint x="90" y="410" as="sourcePoint" />
+            <mxPoint x="250" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q8vAl-WPXsvcyoQia3Vs-32" value="Server-side Action" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-31" connectable="0" vertex="1">
+        <mxCell id="Q8vAl-WPXsvcyoQia3Vs-32" value="Server request pictures by getAll function" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-31" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-8" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="2" vertex="1">
+          <mxGeometry x="118" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-24" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.513;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;" parent="2" source="dQv5QP7235FZ7IHjPzUk-8" target="Q8vAl-WPXsvcyoQia3Vs-30" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="350" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-10" value="Front-end Triggers Backend onStart Component" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="2" connectable="0" vertex="1">
+          <mxGeometry x="129.99540982752956" y="89.9999895861381" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-25" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="2" vertex="1">
+          <mxGeometry x="110" y="440" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.484;exitY=1.06;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="2" source="8" target="dQv5QP7235FZ7IHjPzUk-25" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="160" y="420" as="sourcePoint" />
+            <mxPoint x="320" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-27" value="to show pictures on Front-end" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="2" connectable="0" vertex="1">
+          <mxGeometry x="125.00084738459174" y="409.9999569090271" as="geometry" />
+        </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-11" value="2nd Functionality of App. SendGrid" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
-          <mxGeometry x="490" y="40" width="260" height="290" as="geometry">
+          <mxGeometry x="489" y="40" width="260" height="540" as="geometry">
             <mxRectangle x="230" y="40" width="80" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-14" value="Contact form" style="" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
-          <mxGeometry x="72.5" y="40" width="110" height="50" as="geometry" />
+          <mxGeometry x="72.5" y="110" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.47;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="Q8vAl-WPXsvcyoQia3Vs-18" target="Q8vAl-WPXsvcyoQia3Vs-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-18" value="Required fields filled" style="rhombus;whiteSpace=wrap;html=1;" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
-          <mxGeometry x="87.5" y="125" width="80" height="80" as="geometry" />
+          <mxGeometry x="87.5" y="195" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.509;exitY=1.06;exitDx=0;exitDy=0;exitPerimeter=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="Q8vAl-WPXsvcyoQia3Vs-14" target="Q8vAl-WPXsvcyoQia3Vs-18" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="192.5" y="35" as="sourcePoint" />
-            <mxPoint x="292.5" y="35" as="targetPoint" />
+            <mxPoint x="192.5" y="105" as="sourcePoint" />
+            <mxPoint x="292.5" y="105" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q8vAl-WPXsvcyoQia3Vs-20" value="Form Submittion" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-19" connectable="0" vertex="1">
+        <mxCell id="Q8vAl-WPXsvcyoQia3Vs-20" value="Form validation on front side" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-19" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.004;entryY=0.345;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.468;exitY=1.072;exitDx=0;exitDy=0;exitPerimeter=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="Q8vAl-WPXsvcyoQia3Vs-22" target="Q8vAl-WPXsvcyoQia3Vs-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-22" value="Send Button Active" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
-          <mxGeometry x="34.5" y="203" width="70" height="30" as="geometry" />
+          <mxGeometry x="34.5" y="273" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.429;entryY=0.033;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="Q8vAl-WPXsvcyoQia3Vs-18" target="Q8vAl-WPXsvcyoQia3Vs-22" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="72.5" y="165" as="sourcePoint" />
-            <mxPoint x="192.5" y="165" as="targetPoint" />
+            <mxPoint x="72.5" y="235" as="sourcePoint" />
+            <mxPoint x="192.5" y="235" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="64.5" y="165" />
+              <mxPoint x="64.5" y="235" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -79,16 +103,53 @@
             <mxPoint x="-1" y="8" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.32;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="Q8vAl-WPXsvcyoQia3Vs-25" target="Q8vAl-WPXsvcyoQia3Vs-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-25" value="Send Button Passive" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
-          <mxGeometry x="155.5" y="203" width="70" height="30" as="geometry" />
+          <mxGeometry x="155.5" y="273" width="70" height="27" as="geometry" />
         </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-26" value="No" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-11" connectable="0" vertex="1">
-          <mxGeometry x="179.5017245796207" y="182.24137864687498" as="geometry">
+          <mxGeometry x="179.5017245796207" y="252.24137864687498" as="geometry">
             <mxPoint x="10" y="-4" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.493;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="Q8vAl-WPXsvcyoQia3Vs-27" target="dQv5QP7235FZ7IHjPzUk-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Q8vAl-WPXsvcyoQia3Vs-27" value="Mail send via SendGrid API" style="rounded=0;whiteSpace=wrap;html=1;" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
-          <mxGeometry x="92.5" y="259" width="82" height="30" as="geometry" />
+          <mxGeometry x="89" y="350" width="82" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-31" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
+          <mxGeometry x="115" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="dQv5QP7235FZ7IHjPzUk-31" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="37" y="300" as="sourcePoint" />
+            <mxPoint x="130" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-33" value="User fills contact form on front-end" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-11" connectable="0" vertex="1">
+          <mxGeometry x="126.99540982752956" y="79.9999895861381" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-34" value="Sending request to back-end" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-11" connectable="0" vertex="1">
+          <mxGeometry x="69.50172457962071" y="329.00137864687497" as="geometry">
+            <mxPoint x="10" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-39" value="Respond result message to client-side" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="Q8vAl-WPXsvcyoQia3Vs-11" connectable="0" vertex="1">
+          <mxGeometry x="120.00172457962071" y="399.00137864687497" as="geometry">
+            <mxPoint x="10" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="Q8vAl-WPXsvcyoQia3Vs-11" source="dQv5QP7235FZ7IHjPzUk-40" target="dQv5QP7235FZ7IHjPzUk-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-40" value="Alert user on client side" style="html=1;" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
+          <mxGeometry x="62.5" y="420" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dQv5QP7235FZ7IHjPzUk-44" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="Q8vAl-WPXsvcyoQia3Vs-11" vertex="1">
+          <mxGeometry x="115" y="503" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
